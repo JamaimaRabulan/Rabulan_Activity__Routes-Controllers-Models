@@ -1,0 +1,182 @@
+{{> head}}
+
+<body class="bg-gray-100">
+
+    <div class="min-h-screen">
+
+        {{> header}}
+
+        <div class="flex min-h-[calc(100vh-4rem)]">
+
+            {{> sidebar}}
+
+            <main class="flex-1 p-5 lg:p-8">
+
+                {{> breadcrumbs}}
+
+                <!-- PAGE HEADER -->
+                <div class="mb-7">
+                    <div class="flex items-center justify-between">
+
+                        <div>
+                            <h1 class="text-2xl font-semibold text-gray-800">
+                                Test Activity
+                            </h1>
+
+                            <p class="text-sm text-gray-500 mt-1">
+                                XianFire Partial and Data Activity
+                            </p>
+                        </div>
+
+                        <div class="hidden sm:block">
+                            <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium">
+                                Activity
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- METRICS -->
+                {{> metrics}}
+
+
+                <!-- MAIN CONTENT -->
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
+
+                    <!-- USER RECORDS -->
+                    <div class="xl:col-span-2">
+
+                        {{> table}}
+
+                    </div>
+
+
+                    <!-- ACTIVITY INFORMATION -->
+                    <div class="bg-white rounded-xl shadow overflow-hidden">
+
+                        <div class="px-5 py-4 border-b">
+                            <h2 class="font-semibold text-gray-800">
+                                Activity Information
+                            </h2>
+
+                            <p class="text-xs text-gray-500 mt-1">
+                                XianFire activity details
+                            </p>
+                        </div>
+
+                        <div class="p-5 space-y-4">
+
+                            <div class="p-4 bg-blue-50 rounded-lg">
+                                <p class="text-xs text-gray-500">
+                                    Page
+                                </p>
+
+                                <p class="text-sm font-semibold text-gray-800 mt-1">
+                                    Test Activity
+                                </p>
+                            </div>
+
+
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="text-xs text-gray-500">
+                                    Controller
+                                </p>
+
+                                <p class="text-sm font-semibold text-gray-800 mt-1">
+                                    test.js
+                                </p>
+                            </div>
+
+
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="text-xs text-gray-500">
+                                    View
+                                </p>
+
+                                <p class="text-sm font-semibold text-gray-800 mt-1">
+                                    page1.xian
+                                </p>
+                            </div>
+
+
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="text-xs text-gray-500">
+                                    Records
+                                </p>
+
+                                <p class="text-sm font-semibold text-gray-800 mt-1">
+                                    5 Users
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUMMARY -->
+                <div class="mt-5 bg-white rounded-xl shadow">
+
+                    <div class="px-5 py-4 border-b">
+
+                        <h2 class="font-semibold text-gray-800">
+                            Activity Summary
+                        </h2>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                            Summary of the current XianFire activity
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3">
+
+                        <div class="p-5 border-b md:border-b-0 md:border-r">
+                            <p class="text-xs text-gray-500">
+                                Partial Rendering
+                            </p>
+
+                            <p class="text-lg font-semibold text-gray-800 mt-2">
+                                Enabled
+                            </p>
+                        </div>
+
+
+                        <div class="p-5 border-b md:border-b-0 md:border-r">
+                            <p class="text-xs text-gray-500">
+                                Data Passing
+                            </p>
+
+                            <p class="text-lg font-semibold text-gray-800 mt-2">
+                                Working
+                            </p>
+                        </div>
+
+
+                        <div class="p-5">
+                            <p class="text-xs text-gray-500">
+                                Activity Status
+                            </p>
+
+                            <p class="text-lg font-semibold text-green-600 mt-2">
+                                Active
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        {{> footer}}
+
+    </div>
+
+</body>

@@ -1,0 +1,52 @@
+<nav class="mb-6" aria-label="Breadcrumb">
+
+    <ol class="flex items-center text-sm">
+
+        <!-- Home -->
+        <li class="flex items-center">
+
+            <a
+                href="/dashboard"
+                class="text-blue-600 hover:text-blue-800 font-medium">
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+
+        <!-- Separator -->
+        <li class="mx-2 text-gray-400">
+            /
+        </li>
+
+
+        <!-- Section -->
+        <li class="flex items-center">
+
+            <span class="text-gray-500">
+                {{section}}
+            </span>
+
+        </li>
+
+
+        <!-- Separator -->
+        <li class="mx-2 text-gray-400">
+            /
+        </li>
+
+
+        <!-- Current Page -->
+        <li>
+
+            <span class="text-gray-800 font-semibold">
+                {{pageTitle}}
+            </span>
+
+        </li>
+
+    </ol>
+
+</nav>  

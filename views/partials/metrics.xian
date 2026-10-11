@@ -1,0 +1,31 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-6">
+
+    <div class="bg-white rounded-xl shadow p-5">
+        <p class="text-sm text-gray-500">Total Users</p>
+        <h2 class="text-3xl font-bold text-gray-800 mt-2">
+            {{metrics.totalUsers}}
+        </h2>
+    </div>
+
+    <div class="bg-white rounded-xl shadow p-5">
+        <p class="text-sm text-gray-500">Active Users</p>
+        <h2 class="text-3xl font-bold text-gray-800 mt-2">
+            {{metrics.activeUsers}}
+        </h2>
+    </div>
+
+    <div class="bg-white rounded-xl shadow p-5">
+        <p class="text-sm text-gray-500">Total Records</p>
+        <h2 class="text-3xl font-bold text-gray-800 mt-2">
+            {{metrics.totalRecords}}
+        </h2>
+    </div>
+
+    <div class="bg-white rounded-xl shadow p-5">
+        <p class="text-sm text-gray-500">Pending</p>
+        <h2 class="text-3xl font-bold text-gray-800 mt-2">
+            {{metrics.pending}}
+        </h2>
+    </div>
+
+</div>

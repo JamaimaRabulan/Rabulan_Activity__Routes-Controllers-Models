@@ -1,0 +1,61 @@
+<div class="bg-white rounded-xl shadow overflow-hidden">
+
+    <div class="px-6 py-4 border-b">
+        <h2 class="text-lg font-semibold text-gray-800">
+            User Records
+        </h2>
+
+        <p class="text-sm text-gray-500">
+            List of registered users
+        </p>
+    </div>
+
+    <div class="overflow-x-auto">
+
+        <table class="w-full">
+
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">
+                        Name
+                    </th>
+
+                    <th class="px-6 py-3 text-left text-sm font-semibold">
+                        Age
+                    </th>
+
+                    <th class="px-6 py-3 text-left text-sm font-semibold">
+                        Address
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {{#each data}}
+
+                <tr class="border-t hover:bg-gray-50">
+
+                    <td class="px-6 py-4 text-sm">
+                        {{name}}
+                    </td>
+
+                    <td class="px-6 py-4 text-sm">
+                        {{age}}
+                    </td>
+
+                    <td class="px-6 py-4 text-sm">
+                        {{address}}
+                    </td>
+
+                </tr>
+
+                {{/each}}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
